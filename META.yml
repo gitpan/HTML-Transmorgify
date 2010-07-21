@@ -1,0 +1,47 @@
+---
+abstract: 'Framework for compiling tranformations on HTML text'
+author: []
+configure_requires:
+  Module::Build: 0.36
+generated_by: 'Module::Build version 0.3607'
+license: perl
+meta-spec:
+  url: http://module-build.sourceforge.net/META-spec-v1.4.html
+  version: 1.4
+name: HTML-Transmorgify
+provides:
+  HTML::Transmorgify:
+    file: lib/HTML/Transmorgify.pm
+    version: 0.02
+  HTML::Transmorgify::Attributes:
+    file: lib/HTML/Transmorgify/Attributes.pm
+  HTML::Transmorgify::CloseTag:
+    file: lib/HTML/Transmorgify.pm
+  HTML::Transmorgify::Crumbs:
+    file: lib/HTML/Transmorgify/Crumbs.pm
+  HTML::Transmorgify::Deferred:
+    file: lib/HTML/Transmorgify.pm
+  HTML::Transmorgify::Exclusive:
+    file: lib/HTML/Transmorgify.pm
+  HTML::Transmorgify::FormChecksum:
+    file: lib/HTML/Transmorgify/FormChecksum.pm
+  HTML::Transmorgify::FormDefault:
+    file: lib/HTML/Transmorgify/FormDefault.pm
+  HTML::Transmorgify::Metatags:
+    file: lib/HTML/Transmorgify/Metatags.pm
+  HTML::Transmorgify::MutuallyExclusive:
+    file: lib/HTML/Transmorgify.pm
+  HTML::Transmorgify::ObjectGlue:
+    file: lib/HTML/Transmorgify/ObjectGlue.pm
+  HTML::Transmorgify::Stack:
+    file: lib/HTML/Transmorgify.pm
+  HTML::Transmorgify::Symbols:
+    file: lib/HTML/Transmorgify/Symbols.pm
+requires:
+  File::Slurp: 0
+  Image::Size: 0
+  Parse::RecDescent: 0
+  Test::Differences: 0
+resources:
+  license: http://dev.perl.org/licenses/
+version: 0.02
