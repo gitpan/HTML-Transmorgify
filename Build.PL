@@ -10,6 +10,7 @@ my $build = Module::Build->new (
 		'Image::Size' => 0,
 		'Test::Differences' => 0,
 		'File::Slurp' => 0,
+		'Object::Dependency' => 0,
 	},
 );
 $build->create_build_script;

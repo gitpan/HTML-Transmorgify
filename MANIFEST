@@ -1,4 +1,5 @@
 Build.PL
+CHANGELOG
 lib/HTML/Transmorgify.pm
 lib/HTML/Transmorgify.pod
 lib/HTML/Transmorgify/Attributes.pm
@@ -19,7 +20,7 @@ t/attributes.t
 t/basic.t
 t/conditional.t
 t/crumbs.t
-t/dumpstack
+t/diversions.t
 t/form_checksum.t
 t/form_default.t
 t/howperlworks.t

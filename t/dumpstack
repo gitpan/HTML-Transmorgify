@@ -1,1 +1,0 @@
-sub cs { my @r; my $c = 1; while (my($p, $f, $l, $F) = caller($c++)) { push(@r, "$f:$l-$F") } ; return @r };
