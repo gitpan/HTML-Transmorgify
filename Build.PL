@@ -11,6 +11,7 @@ my $build = Module::Build->new (
 		'Test::Differences' => 0,
 		'File::Slurp' => 0,
 		'Object::Dependency' => 0,
+		'HTML::Entities' => 0,
 	},
 );
 $build->create_build_script;
