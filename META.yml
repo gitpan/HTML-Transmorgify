@@ -15,7 +15,7 @@ name: HTML-Transmorgify
 provides:
   HTML::Transmorgify:
     file: lib/HTML/Transmorgify.pm
-    version: 0.08
+    version: 0.09
   HTML::Transmorgify::Attributes:
     file: lib/HTML/Transmorgify/Attributes.pm
   HTML::Transmorgify::CloseTag:
@@ -54,6 +54,7 @@ requires:
   HTML::Entities: 0
   Image::Size: 0
   List::Util: 0
+  Module::Load: 0
   Object::Dependency: 0
   Scalar::Util: 0
   Test::Differences: 0
@@ -61,4 +62,4 @@ requires:
   YAML: 0
 resources:
   license: http://dev.perl.org/licenses/
-version: 0.08
+version: 0.09
