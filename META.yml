@@ -15,7 +15,7 @@ name: HTML-Transmorgify
 provides:
   HTML::Transmorgify:
     file: lib/HTML/Transmorgify.pm
-    version: 0.09
+    version: 0.11
   HTML::Transmorgify::Attributes:
     file: lib/HTML/Transmorgify/Attributes.pm
   HTML::Transmorgify::CloseTag:
@@ -62,4 +62,4 @@ requires:
   YAML: 0
 resources:
   license: http://dev.perl.org/licenses/
-version: 0.09
+version: 0.11

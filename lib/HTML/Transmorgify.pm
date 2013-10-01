@@ -21,7 +21,7 @@ require Exporter;
 use Module::Load;
 use HTML::Transmorgify::Symbols;
 
-our $VERSION = 0.09;
+our $VERSION = 0.11;
 
 our @ISA = qw(Exporter);
 our @EXPORT = qw(dangling);
@@ -385,7 +385,7 @@ sub continue_compile
 print STDERR "# overriding ".join(';', @ks)."\n" if $debug;
 	local(@$tagset{@ks}) = values %tags;
 	my $start = pos($$textref);
-	printf STDERR "# Invoking continue_compile(%s/%s) at %d for %s from %d\n", $onetag, scalar(%$tagset), $start, dstring($$textref, $start), (caller())[2] if $debug;
+	printf STDERR "# Invoking continue_compile(%s/%s) at %d for %s from %d\n", $onetag || '?', scalar(%$tagset), $start, dstring($$textref, $start), (caller())[2] if $debug;
 	if ($onetag) {
 		local($dispatch{"/$onetag"}) = HTML::Transmorgify::CloseTag->new($dispatch{"/$onetag"});
 		my $finaltag = do_compile();
@@ -394,7 +394,7 @@ print STDERR "# overriding ".join(';', @ks)."\n" if $debug;
 	} else {
 		do_compile();
 	}
-	printf STDERR "# Done continue_compile(%s/%s) at %d, now at %d\n", $onetag, scalar(%$tagset), $start, pos($$textref) if $debug;
+	printf STDERR "# Done continue_compile(%s/%s) at %d, now at %d\n", $onetag || '?', scalar(%$tagset), $start, pos($$textref) if $debug;
 }
 
 sub do_compile
